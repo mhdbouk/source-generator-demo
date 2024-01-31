@@ -20,7 +20,8 @@ This is demonstrated in a detailed YouTube video, go check it out
 
 ## Note
 
-Please note that I have updated the IEndpoint interface to include a `abstract static` method, which will be used by the source generator to generate the endpoint registration code without the need to initialize the endpoint class. Thanks to `@jamesparson2476` for the suggestion.
+### Update 1: Using `abstract static` method
+Note that I have updated the IEndpoint interface to include a `abstract static` method, which will be used by the source generator to generate the endpoint registration code without the need to initialize the endpoint class. Thanks to `@jamesparson2476` for the suggestion.
 
 ```csharp
 public interface IEndpoint
@@ -28,6 +29,11 @@ public interface IEndpoint
     public abstract static void MapAllEndpoints(WebApplication app);
 }
 ```
+
+### Update 2: Check for `IEndpoint` interface in `Initialize` method
+
+Another change was to move the logic of checking for classes implementing `IEndpoint` interface to when we create the syntax provider in the `Initialize` method. This is to avoid the need to check for the interface in the `Execute` method, which is called for each syntax node. Thanks to `@haydensprogramming6766` for the suggestion.
+
 
 If you have any more comment, please do share them in the comment section of the YouTube video.
 
