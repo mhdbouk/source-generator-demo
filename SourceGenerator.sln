@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApis", "MinimalApis\MinimalApis.csproj", "{A6DF2064-6FE2-4634-B40B-1240AF2446B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerator", "SourceGenerator\SourceGenerator.csproj", "{F220E582-3B57-45EB-B10F-8A80138187BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DF2064-6FE2-4634-B40B-1240AF2446B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DF2064-6FE2-4634-B40B-1240AF2446B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DF2064-6FE2-4634-B40B-1240AF2446B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DF2064-6FE2-4634-B40B-1240AF2446B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F220E582-3B57-45EB-B10F-8A80138187BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F220E582-3B57-45EB-B10F-8A80138187BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F220E582-3B57-45EB-B10F-8A80138187BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F220E582-3B57-45EB-B10F-8A80138187BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
